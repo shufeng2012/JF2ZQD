@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开始</title>
+    <style type="text/css">
+        .div{
+            width: 400px;
+            height: 250px;
+            background-color: #E1E9EF;
+            border-radius: 10px;
+            font-size: 18px;
+            padding: 120px 100px;
+            margin: 120px auto;
+        }
+        .password_submit{
+            height: 40px;
+            width: 300px;
+            border: none;
+            background-color: #F8F9F9;
+            padding: 0 35px;
+            font-size: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.7), inset 0px 2px 5px #aaaaaa;
+            border-radius: 5px;
+            color: saddlebrown;
+            display: inline-block;
+            font-size: 20px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color:#fff;
+            background-color: rgb(16, 185, 214);
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            margin-top: 20px;
+            }
+        .password_submit:hover{
+        background-color: #1795bb;
+        }
+        .password_submit:active{
+            background-color: #1795bb;
+            box-shadow: 0 5px #666;
+            transform:translateY(4px);
+        }
+        body{
+            background: url(img23.jpg);
+            background-repeat:no-repeat;
+            background-size:100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <h1>执勤队后台登录</h1>
+        <p>请输入登录密码</p>
+        <input type="password" class="password" placeholder="请输入密码" id="password">
+        <br>
+        <input type="submit" class="password_submit" value="登录" onclick="PassWord()">
+    </div>
+    <script type="text/javascript">
+        function PassWord()
+        {
+            password = document.getElementById('password').value;
+            JSON.parse(password);
+            if(password == "123456"){
+                window.location.href="files/start.html";
+            }else{
+                alert("密码错误");
+            }
+        }
+    </script>
+</body>
+</html>

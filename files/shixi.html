@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>新增实习</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <h1>新增实习</h1>
+        <h2>请填写以下信息</h2>
+        <p>实习队员班级：</p><input type="text" id="shixi_duiyuan_class" placeholder="请输入实习班级" class="input">
+        <p>实习队员姓名：</p><input type="text" id="shixi_duiyuan_name" placeholder="请输入实习姓名" class="input">
+        <br>
+        <p>导师班级：</p><input type="text" id="shixi_daoshi_class" placeholder="请输入导师班级" class="input">
+        <p>导师姓名：</p><input type="text" id="shixi_daoshi_name" placeholder="请输入导师姓名" class="input">
+        <br>
+        <script src="index.js"></script>
+        <input type="submit" onclick="ShiXi()" id="button">
+        <br>
+        <a href="javascript:history.back(-1)">
+            <button id="button">返回</button>           <!--返回键-->
+        </a>
+    </body>
+</html>
